@@ -1,0 +1,6 @@
+[package]
+name = "monolithic_study_presence"
+type = "bin"
+authors = []
+
+[dependencies]

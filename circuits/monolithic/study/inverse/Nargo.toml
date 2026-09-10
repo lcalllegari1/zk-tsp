@@ -1,0 +1,6 @@
+[package]
+name = "monolithic_study_invperm"
+type = "bin"
+authors = []
+
+[dependencies]

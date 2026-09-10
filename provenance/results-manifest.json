@@ -1,0 +1,128 @@
+{
+  "schema": "zk-tsp.results-manifest.v1",
+  "audit_date": "2026-08-28",
+  "source_repository": "/home/callexyz/Desktop/plsgod",
+  "historical_revision": "008033fa0d47c377c2de0e9379444329a1ad96d0",
+  "datasets": [
+    {
+      "id": "mechanism-study",
+      "role": "historical-raw",
+      "path": "results/frozen/export_flat.csv",
+      "source_path": "results/export_flat.csv",
+      "source_state": "revision 008033f",
+      "sha256": "785f43ea29639c1edba66e4b6b138582d71998306ea95a2a869eeb8bcb934c9b",
+      "rows": 220,
+      "schema_name": "monolithic"
+    },
+    {
+      "id": "monolithic",
+      "role": "historical-raw",
+      "path": "results/frozen/flat.csv",
+      "source_path": "results/flat.csv",
+      "source_state": "revision 008033f",
+      "sha256": "dbbe7084c392d2c2387688b85748b2f937f6b172e7df5a599b4ffcdd631d6dc6",
+      "rows": 372,
+      "schema_name": "monolithic"
+    },
+    {
+      "id": "monolithic-large",
+      "role": "historical-raw",
+      "path": "results/frozen/flat_large.csv",
+      "source_path": "results/flat_large.csv",
+      "source_state": "revision 008033f",
+      "sha256": "55ddfa3cf315ce21645a004f72de6043de69086d5c9167f7a120c95089a05e7b",
+      "rows": 18,
+      "schema_name": "monolithic"
+    },
+    {
+      "id": "plain-sort",
+      "role": "historical-raw",
+      "path": "results/frozen/hier_sort_iso.csv",
+      "source_path": "results/hier_sort_iso.csv",
+      "source_state": "revision 008033f",
+      "sha256": "7fc860344ddab553eb90bfadb06af5768c5043102525d600967c5c5db4699f92",
+      "rows": 663,
+      "schema_name": "external"
+    },
+    {
+      "id": "plain-product",
+      "role": "historical-raw",
+      "path": "results/frozen/hier_gp_iso.csv",
+      "source_path": "results/hier_gp_iso.csv",
+      "source_state": "revision 008033f",
+      "sha256": "4b51fca1e497bf77c771637b7be5c00e65bfbecf14b21a3dd29c0acb527573c6",
+      "rows": 663,
+      "schema_name": "external"
+    },
+    {
+      "id": "committed-sort",
+      "role": "historical-raw",
+      "path": "results/frozen/hier_committed_sort_iso.csv",
+      "source_path": "results/hier_committed_sort_iso.csv",
+      "source_state": "revision 008033f",
+      "sha256": "bbbc7763b69564743216f0716f6af3e7ba5599a561fe92aaaa7afa0c5f461939",
+      "rows": 663,
+      "schema_name": "external"
+    },
+    {
+      "id": "committed-product",
+      "role": "historical-raw",
+      "path": "results/frozen/hier_committed_gp_iso.csv",
+      "source_path": "results/hier_committed_gp_iso.csv",
+      "source_state": "revision 008033f",
+      "sha256": "7701c5106ae18a1662d444382310cce33b29f77113983d8777a47338bbd76a09",
+      "rows": 663,
+      "schema_name": "external"
+    },
+    {
+      "id": "recursive-product-pre-repair",
+      "role": "historical-raw",
+      "path": "results/frozen/recursive_gp_pre_repair.csv",
+      "source_path": "results/recursive_gp_raw.csv",
+      "source_state": "revision 008033f",
+      "sha256": "e45f85932fff5c7fec9965b7905ec6161e3626c31971e7c2bfa93489f009e15a",
+      "rows": 238,
+      "schema_name": "recursive"
+    },
+    {
+      "id": "recursive-product-large-pre-repair",
+      "role": "historical-raw",
+      "path": "results/frozen/recursive_gp_large_pre_repair.csv",
+      "source_path": "results/recursive_gp_large_raw.csv",
+      "source_state": "revision 008033f",
+      "sha256": "2c2e0f6fb24b20061f5d300bb8d5df4621517c9af0bfa23a972298609bb50f97",
+      "rows": 204,
+      "schema_name": "recursive"
+    },
+    {
+      "id": "recursive-key-embedding-calibration",
+      "role": "calibration",
+      "path": "results/frozen/recursive_key_embedding_delta.csv",
+      "source_path": "results/recursive_key_embedding_delta.csv",
+      "source_state": "audited working tree over revision 008033f",
+      "sha256": "9a7c38fedf5c78c25f80d5394c38bc191b9db6a0a1062b781476d11f00d019a8",
+      "rows": 3,
+      "schema_name": "calibration"
+    },
+    {
+      "id": "recursive-product",
+      "role": "derived-thesis-input",
+      "path": "results/derived/recursive_gp.csv",
+      "derived_from": "recursive-product-pre-repair",
+      "transform": "add 113 to gates and acir for outer_recursive rows only",
+      "sha256": "6a74be3b25154b477a5664264a6b90c05ca9301822b0a62ac5d389b6a21da122",
+      "rows": 238,
+      "schema_name": "recursive"
+    },
+    {
+      "id": "recursive-product-large",
+      "role": "derived-thesis-input",
+      "path": "results/derived/recursive_gp_large.csv",
+      "derived_from": "recursive-product-large-pre-repair",
+      "transform": "add 113 to gates and acir for outer_recursive rows only",
+      "sha256": "888bde6156ab088d4d2638c084a0abe5062ad7b90b1e7503b9e1d48614ae5c87",
+      "rows": 204,
+      "schema_name": "recursive"
+    }
+  ]
+}

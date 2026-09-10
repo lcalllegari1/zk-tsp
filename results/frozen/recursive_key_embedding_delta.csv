@@ -1,0 +1,4 @@
+n,k,depth,old_outer_gates,new_outer_gates,gate_delta,old_outer_acir,new_outer_acir,acir_delta,proof_bytes,calibration_prove_s,calibration_verify_s,calibration_peak_mb
+8,2,6,1472248,1472361,113,172,285,113,14656,16.1802,0.0118,2078.96
+8,4,6,3006769,3006882,113,326,439,113,,,,
+16,2,8,1472607,1472720,113,232,345,113,,,,

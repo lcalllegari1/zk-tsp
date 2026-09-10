@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zk-tsp-architectures"
+version = "0.1.0"
+description = "Reproducible artifact for the ZK-TSP architecture thesis"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy==2.4.4",
+]
+
+[project.optional-dependencies]
+plots = [
+    "matplotlib==3.10.8",
+    "pandas==3.0.2",
+]
+
+[project.scripts]
+zk-tsp = "zk_tsp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

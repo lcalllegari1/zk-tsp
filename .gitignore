@@ -1,0 +1,22 @@
+.venv/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+
+# Noir and Barretenberg artifacts
+target/
+Prover.toml
+.runs/
+
+# Runtime data and benchmark outputs
+data/cache/
+results/generated/
+
+# Rust artifacts used by later migration slices
+**/target/
+
+# Editors and operating systems
+.vscode/
+.DS_Store

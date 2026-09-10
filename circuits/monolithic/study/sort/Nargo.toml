@@ -1,0 +1,6 @@
+[package]
+name = "monolithic_study_sort"
+type = "bin"
+authors = []
+
+[dependencies]

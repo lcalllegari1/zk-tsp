@@ -1,0 +1,6 @@
+[package]
+name = "monolithic_study_pairwise"
+type = "bin"
+authors = []
+
+[dependencies]

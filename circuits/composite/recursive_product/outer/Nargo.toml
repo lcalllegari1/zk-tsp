@@ -1,0 +1,8 @@
+[package]
+name = "composite_recursive"
+type = "bin"
+authors = []
+
+[dependencies]
+bb_proof_verification = { git = "https://github.com/AztecProtocol/aztec-packages", tag = "v5.0.0-nightly.20260518", directory = "barretenberg/noir/bb_proof_verification" }
+poseidon = { tag = "v0.3.0", git = "https://github.com/noir-lang/poseidon" }
